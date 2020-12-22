@@ -15,8 +15,8 @@ PyAutoGUI==0.9.38
 pyee==6.0.0
 PyGetWindow==0.0.8
 PyMsgBox==1.0.7
-pyobjc-core==6.1
-pyobjc==6.1
+# pyobjc-core==6.1
+# pyobjc==6.1
 pyperclip==1.7.0
 pyppeteer==0.0.25
 pyquery==1.4.1

@@ -1,0 +1,7 @@
+Error: 'Time Series (1min)'
+json data: <bound method Response.json of <Response [200]>>Error: 'Time Series (1min)'
+json data: <bound method Response.json of <Response [200]>>Error: 'Time Series (1min)'
+json data: <bound method Response.json of <Response [200]>>Error: 'Time Series (1min)'
+json data: <bound method Response.json of <Response [200]>>Error: 'Time Series (1min)'
+json data: <bound method Response.json of <Response [200]>>Error: 'Time Series (1min)'
+json data: <bound method Response.json of <Response [200]>>

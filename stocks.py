@@ -15,10 +15,8 @@ from pytz import timezone
 from sklearn.neural_network import MLPRegressor
 from sys import exit
 from yahoo_fin import stock_info as si
-from yahoofinancials import YahooFinancials as yf
 import pandas 
 import xlrd
-import csv
 
 '''
 Settings for the Program;
@@ -96,28 +94,6 @@ def getTopStocks(top_stocks_no):
 
     #stock_list = html[html.find('"pageCategory":"YFINANCE:') + 25:html.find('","fallbackCategory":')].split(',')[0:num_of_stocks]   # list indexed starts with meta data object, so add 1 to index because index[0] is removed
     print(':Top {} stocks: {}.'.format(top_stocks_no, stock_list))
-    fields=['Company Name','Company Symbol']
-    rows=[]
-    for i in range(len(stock_list)):
-        tstock=yf(stock_list[i])
-        get_name=tstock.get_stock_quote_type_data()
-        
-        rows.append( [stock_list[i],get_name[stock_list[i]]['longName']], )
-    filename="StockList.csv"
-    with open(filename, 'w') as csvfile:  
-        # creating a csv writer object  
-        csvwriter = csv.writer(csvfile)  
-        
-        # writing the fields  
-        csvwriter.writerow(fields)  
-        
-        # writing the data rows  
-        csvwriter.writerows(rows)     
-    
-
-
-
-
 
 
 def getStockData(stock):
